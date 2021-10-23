@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>FORM DAFTAR</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="">Nama Lengkap</label></td>
+                        <td>: <input type="text" name="nama" id="nama" placeholder="Input Nama Lengkap"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email</label></td>
+                        <td>: <input type="email" name="txt_email" id="txt_email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Password</label></td>
+                        <td>: <input type="password" name="txt_password" id="txt_password"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>: <input type="date" name="txt_lahir" id="txt_lahir"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>: 
+                            <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="laki">Laki Laki
+                            <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="perempuan">Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Social Media</td>
+                        <td>: 
+                            <input type="checkbox" name="sosmed" id="sosmed" value="FB">FB
+                            <input type="checkbox" name="sosmed" id="sosmed" value="IG">IG
+                            <input type="checkbox" name="sosmed" id="sosmed" value="TWT">Twitter
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td>: 
+                            <select name="agama" id="agama">
+                                <option value="" selected disabled>Pilih Agama</option>
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="hindu">Hindu</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>: <textarea name="alamat" id="alamat" cols="30" rows="5" placeholder="Masukan alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Provinsi</td>
+                        <td>: 
+                            <input list="daftarprovinsi" name="provinsi">
+                            <datalist id="daftarprovinsi">
+                                <option value="Jatim">Jatim</option>
+                                <option value="Jateng">Jateng</option>
+                                <option value="Jabar">Jabar</option>
+                                <option value="Bali">Bali</option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td>Upload Foto</td>
+                        <td>: <input type="file" name="filefoto" id="filefoto"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <button type="button" name="btn_button" id="btn_button">BUTTON</button>
+            <button type="submit" name="btn_submit" id="btn_submit">SIMPAN</button>
+            <button type="reset" name="btn_reset" id="btn_reset">RESET</button>
+        </fieldset>
+    </form>
+</body>
+</html>
