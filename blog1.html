@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="320" height="240" style="border: 1px solid #000000;"></canvas>
+    <script>
+        window.onload = function() {
+            var kanvas = document.getElementById("myCanvas");
+            var konteks = kanvas.getContext("2d");
+            konteks.moveTo(0, 0);
+            konteks.lineTo(320, 240);
+            konteks.stroke();
+        }
+    </script>
+    <svg width="190">
+        <!-- <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill-rule: evenodd; fill: lime; stroke-width: 3px; stroke: black;"></polygon> -->
+        <polygon points="40,180 190,60 10,60 160,180" style="fill-rule: evenodd; fill: lime; stroke-width: 3px; stroke: black;"></polygon>
+    </svg>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+    </svg>
+    <svg width="400" height="180">
+        <!-- <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill: red; stroke-width: 3px; stroke: black;"></rect> -->
+        <rect x="50" y="20" rx="40" ry="70" width="150" height="150" style="fill: red; stroke-width: 3px; stroke: black;"></rect>
+    </svg>
+    <br>
+    <video width="500" controls title="Video" muted autoplay>
+        <source src="media/dc.mp4" type="video/mp4">
+    </video>
+    <object data="form.html" width="700" height="400" style="padding-left: 50px;"></object>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uvSZZVPvoNA" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+</body>
+</html>
